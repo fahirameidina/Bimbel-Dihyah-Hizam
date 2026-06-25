@@ -3,93 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRIVATE DIHYAH HIZAM // PENDIDIKAN PRIVAT</title>
+    <title>DIHYAH HIZAM // PRIVATE ACADEMY</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Space+Grotesk:wght@300;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap');
         
-        body { background: #fdfdf5; color: #0a2e25; font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; }
-        .serif { font-family: 'Playfair Display', serif; }
-
-        .kinetic-scroll {
-            display: inline-block;
-            white-space: nowrap;
-            animation: slide 30s linear infinite;
+        body { 
+            background: linear-gradient(135deg, #064e3b 0%, #065f46 100%); 
+            color: #ecfdf5; 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
         }
-        @keyframes slide {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
-        }
+        .cormorant { font-family: 'Cormorant Garamond', serif; }
+        
+        .card-bg { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
+        .hover-lift:hover { transform: translateY(-5px); transition: 0.3s ease; }
 
-        .card-container { transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
-        .card-container:hover { transform: scale(1.02); }
+        /* Menggunakan marquee standar untuk menjamin pergerakan */
+        marquee {
+            background: rgba(0,0,0,0.2);
+            padding: 10px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 10px;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #a7f3d0;
+        }
     </style>
 </head>
-<body class="p-4 md:p-8">
+<body class="min-h-screen">
 
-    <main class="max-w-[1600px] mx-auto">
-        <header class="relative min-h-[90vh] flex flex-col justify-center">
-            <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
-                <span class="serif text-[20vw] font-black italic">DIHYAH</span>
-            </div>
-            
-            <h1 class="serif text-[15vw] italic leading-[0.8] relative z-10 text-center">
-                Dihyah<br><span class="text-emerald-800">Hizam</span>
-            </h1>
-            
-            <div class="mt-20 overflow-hidden w-full border-y border-emerald-900/20 py-6">
-                <div class="kinetic-scroll text-[12px] uppercase tracking-[0.8em] font-bold">
-                    • Pendidikan Privat Eksklusif • Ilmu Adalah Amanah • Proses Adalah Ibadah • Presisi & Integritas • 
-                    • Pendidikan Privat Eksklusif • Ilmu Adalah Amanah • Proses Adalah Ibadah • Presisi & Integritas •
-                </div>
-            </div>
+    <!-- Tulisan Bergerak Standar (Pasti Berhasil) -->
+    <marquee scrollamount="8" behavior="scroll" direction="left">
+        • ILMU ADALAH AMANAH • PROSES ADALAH IBADAH • EKSKLUSIF & PERSONAL • DIHYAH HIZAM PRIVATE ACADEMY • ILMU ADALAH AMANAH • PROSES ADALAH IBADAH • EKSKLUSIF & PERSONAL • DIHYAH HIZAM PRIVATE ACADEMY •
+    </marquee>
+
+    <main class="max-w-4xl mx-auto px-8 py-12">
+        
+        <header class="text-center mb-20">
+            <h1 class="cormorant text-7xl md:text-9xl italic text-emerald-50">Dihyah <span class="opacity-40">Hizam</span></h1>
+            <p class="mt-6 text-[10px] uppercase tracking-[0.5em] opacity-60">Private Education & Mentorship</p>
         </header>
 
-        <section class="grid md:grid-cols-3 gap-8 py-20">
-            <!-- Akademik -->
-            <div class="card-container bg-emerald-900 text-emerald-50 p-12">
-                <h3 class="serif text-4xl italic mb-8">Akademik</h3>
-                <div class="space-y-4 uppercase tracking-[0.3em] text-[10px]">
-                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20dengan%20program%20Akademik%20TK%20(Rp135.000)" class="block hover:text-emerald-300 transition-colors">TK — 135k</a>
-                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20dengan%20program%20Akademik%20SD%20(Rp140.000)" class="block hover:text-emerald-300 transition-colors">SD — 140k</a>
-                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20dengan%20program%20Akademik%20SMP%20(Rp150.000)" class="block hover:text-emerald-300 transition-colors">SMP — 150k</a>
-                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20dengan%20program%20Akademik%20SMA/SMK%20(Rp160.000)" class="block hover:text-emerald-300 transition-colors">SMA/SMK — 160k</a>
-                </div>
-            </div>
-            
-            <!-- Qur'anic -->
-            <div class="card-container bg-emerald-100 p-12">
-                <h3 class="serif text-4xl italic mb-8">Qur'anic</h3>
-                <div class="space-y-4 uppercase tracking-[0.3em] text-[10px]">
-                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20dengan%20program%20Qur'anic%20Anak%20(Rp80.000)" class="block hover:text-emerald-700 transition-colors">Mengaji Anak — 80k</a>
-                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20dengan%20program%20Qur'anic%20Dewasa%20(Rp180.000)" class="block hover:text-emerald-700 transition-colors">Mengaji Dewasa — 180k</a>
-                </div>
-            </div>
-
-            <!-- Teknologi -->
-            <div class="card-container bg-emerald-200 p-12">
-                <h3 class="serif text-4xl italic mb-8">Teknologi</h3>
-                <div class="space-y-4 uppercase tracking-[0.3em] text-[10px]">
-                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20dengan%20program%20Komputer%20Anak%20(Rp150.000)" class="block hover:text-emerald-800 transition-colors">Komputer Anak — 150k</a>
-                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20dengan%20program%20Komputer%20Dewasa%20(Rp220.000)" class="block hover:text-emerald-800 transition-colors">Komputer Dewasa — 220k</a>
-                </div>
-            </div>
+        <section class="text-center mb-20 italic cormorant text-2xl md:text-3xl leading-relaxed text-emerald-100/80">
+            "Menuntut ilmu adalah ibadah; menyebarkannya adalah amanah. Teruslah berproses, karena hasil tidak akan mengkhianati usaha yang diniatkan untuk kebaikan."
         </section>
 
-        <section class="py-32 flex flex-col items-center text-center">
-            <div class="serif text-6xl italic leading-tight max-w-4xl mb-12">
-                "Hasil tidak akan mengkhianati usaha yang diniatkan untuk kebaikan."
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card-bg p-8 border border-emerald-500/20 hover-lift">
+                <h3 class="text-[10px] uppercase tracking-[0.3em] font-bold mb-6 text-emerald-300">Program Akademik</h3>
+                <div class="space-y-4 text-sm font-light">
+                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20Privat%20TK%20135k" class="block hover:text-white transition">TK — 135k/sesi</a>
+                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20Privat%20SD%20140k" class="block hover:text-white transition">SD — 140k/sesi</a>
+                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20Privat%20SMP%20150k" class="block hover:text-white transition">SMP — 150k/sesi</a>
+                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20Privat%20SMA%20160k" class="block hover:text-white transition">SMA — 160k/sesi</a>
+                </div>
             </div>
-            <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20ingin%20konsultasi%20mengenai%20program%20pendidikan%20Dihyah%20Hizam" class="group relative px-12 py-6 bg-emerald-900 text-emerald-50 uppercase tracking-[0.4em] text-[10px] font-bold transition-all hover:bg-emerald-700">
-                Hubungi Sekarang
-            </a>
-        </section>
 
-        <footer class="flex justify-between items-center pt-20 border-t border-emerald-900/10">
-            <p class="uppercase tracking-[0.5em] text-[9px]">Ms. Fahira Meidina Abdi, S. Kom.</p>
-            <p class="uppercase tracking-[0.5em] text-[9px] opacity-40">Jakarta, 2026</p>
+            <div class="card-bg p-8 border border-emerald-500/20 hover-lift">
+                <h3 class="text-[10px] uppercase tracking-[0.3em] font-bold mb-6 text-emerald-300">Spiritual & Teknologi</h3>
+                <div class="space-y-4 text-sm font-light">
+                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20ingin%20info%20Mengaji%20Anak." class="block hover:text-white transition">Mengaji Anak — 80k</a>
+                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20ingin%20info%20Mengaji%20Dewasa." class="block hover:text-white transition">Mengaji Dewasa — 180k</a>
+                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20ingin%20info%20Komputer%20Anak." class="block hover:text-white transition">Komputer Anak — 150k</a>
+                    <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20ingin%20info%20Komputer%20Dewasa." class="block hover:text-white transition">Komputer Dewasa — 220k</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-24 text-center border-t border-emerald-500/20 pt-12">
+            <p class="cormorant text-xl italic mb-2">Ms. Fahira Meidina Abdi, S. Kom.</p>
+            <p class="text-[9px] uppercase tracking-[0.4em] opacity-50">Founder & Lead Mentor</p>
         </footer>
     </main>
-
 </body>
 </html>
