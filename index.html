@@ -1,80 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-       <meta name="google-site-verification" content="MASUKKAN_KODE_DARI_GOOGLE_DISINI" />
-    <title>Bimbel Dihyah Hizam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIHYAH HIZAM // IMPRESSIVE SIGNATURE</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Space+Grotesk:wght@300;500&display=swap');
         
-        body { background-color: #050505; color: #34d399; font-family: 'Space Grotesk', sans-serif; }
-        .archivo { font-family: 'Archivo Black', sans-serif; }
-        
-        .marquee { white-space: nowrap; overflow: hidden; }
-        .marquee span { display: inline-block; padding-left: 100%; animation: marquee 15s linear infinite; }
-        @keyframes marquee { 0% { transform: translate(0, 0); } 100% { transform: translate(-100%, 0); } }
-        
-        .noisy-border { border: 2px solid #34d399; outline: 5px solid #050505; outline-offset: -10px; }
+        body { background: #fdfdf5; color: #0a2e25; font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; }
+        .serif { font-family: 'Playfair Display', serif; }
+
+        /* Kinetik Animasi: Teks Bergerak */
+        .kinetic-scroll {
+            display: inline-block;
+            white-space: nowrap;
+            animation: slide 30s linear infinite;
+        }
+        @keyframes slide {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        /* Layered Reveal */
+        .card-container { transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+        .card-container:hover { transform: scale(1.02); }
     </style>
 </head>
 <body class="p-4 md:p-8">
 
-    <div class="marquee text-4xl archivo uppercase mb-10 border-b border-emerald-500 py-2">
-        <span>Mentorship // Private // Exclusive // Mentorship // Private // Exclusive //</span>
-    </div>
-
-    <main class="grid grid-cols-1 md:grid-cols-12 gap-6">
-        
-        <!-- Hero Box -->
-        <div class="md:col-span-8 noisy-border p-10 h-[60vh] flex flex-col justify-end">
-            <h2 class="text-emerald-500 uppercase tracking-[0.3em] font-bold mb-2">Exclusive Institution</h2>
-            <h1 class="archivo text-6xl md:text-8xl uppercase leading-[0.9] text-white">Private<br>Dihyah<br>Hizam</h1>
-            <p class="mt-8 text-emerald-500 uppercase tracking-[0.2em] font-bold italic">
-                "Menuntut ilmu adalah ibadah; menyebarkannya adalah amanah."
-            </p>
-        </div>
-
-        <!-- Right Sidebar -->
-        <div class="md:col-span-4 noisy-border p-10 flex flex-col justify-between">
-            <div class="space-y-4">
-                <p class="text-xs uppercase">Filosofi Belajar</p>
-                <p class="font-bold italic text-white/80">"Barangsiapa menempuh jalan untuk menuntut ilmu, Allah akan mudahkan baginya jalan menuju surga."</p>
+    <main class="max-w-[1600px] mx-auto">
+        <!-- Hero Section -->
+        <header class="relative min-h-[90vh] flex flex-col justify-center">
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
+                <span class="serif text-[20vw] font-black italic">DIHYAH</span>
             </div>
-            <a href="https://wa.me/6281283449740?text=Halo%20Ms.%20Fahira,%20saya%20tertarik%20dengan%20program%20Private%20Dihyah%20Hizam.%20Boleh%20saya%20mendapatkan%20informasi%20lebih%20lanjut%20mengenai%20prosedur%20dan%20ketersediaan%20jadwalnya%3F%20Terima%20kasih." 
-               class="block w-full text-center py-6 bg-emerald-500 text-black font-black uppercase text-xl hover:scale-[0.98] transition-transform">
-                Connect Now
+            
+            <h1 class="serif text-[15vw] italic leading-[0.8] relative z-10 text-center">
+                Dihyah<br><span class="text-emerald-800">Hizam</span>
+            </h1>
+            
+            <div class="mt-20 overflow-hidden w-full border-y border-emerald-900/20 py-6">
+                <div class="kinetic-scroll text-[12px] uppercase tracking-[0.8em] font-bold">
+                    • Pendidikan Privat Eksklusif • Ilmu Adalah Amanah • Proses Adalah Ibadah • Presisi & Integritas • 
+                    • Pendidikan Privat Eksklusif • Ilmu Adalah Amanah • Proses Adalah Ibadah • Presisi & Integritas •
+                </div>
+            </div>
+        </header>
+
+        <!-- Gallery Grid -->
+        <section class="grid md:grid-cols-3 gap-8 py-20">
+            <div class="card-container bg-emerald-900 text-emerald-50 p-12">
+                <h3 class="serif text-4xl italic mb-8">Akademik</h3>
+                <div class="space-y-4 uppercase tracking-[0.3em] text-[10px]">
+                    <p>TK — 135k</p>
+                    <p>SD — 140k</p>
+                    <p>SMP — 150k</p>
+                    <p>SMA/SMK — 160k</p>
+                </div>
+            </div>
+            
+            <div class="card-container bg-emerald-100 p-12">
+                <h3 class="serif text-4xl italic mb-8">Qur'anic</h3>
+                <div class="space-y-4 uppercase tracking-[0.3em] text-[10px]">
+                    <p>Anak — 80k</p>
+                    <p>Dewasa — 180k</p>
+                </div>
+            </div>
+
+            <div class="card-container bg-emerald-200 p-12">
+                <h3 class="serif text-4xl italic mb-8">Teknologi</h3>
+                <div class="space-y-4 uppercase tracking-[0.3em] text-[10px]">
+                    <p>Anak — 150k</p>
+                    <p>Dewasa — 220k</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="py-32 flex flex-col items-center text-center">
+            <div class="serif text-6xl italic leading-tight max-w-4xl mb-12">
+                "Hasil tidak akan mengkhianati usaha yang diniatkan untuk kebaikan."
+            </div>
+            <a href="https://wa.me/6281283449740" class="group relative px-12 py-6 bg-emerald-900 text-emerald-50 uppercase tracking-[0.4em] text-[10px] font-bold transition-all hover:bg-emerald-700">
+                Hubungi Sekarang
             </a>
-        </div>
+        </section>
 
-        <!-- Mentorship Detail -->
-        <div class="md:col-span-12 noisy-border p-10 grid md:grid-cols-3 gap-10">
-            <div class="space-y-4">
-                <h3 class="archivo text-2xl text-white">Academic</h3>
-                <p class="text-sm opacity-70">TK/SD: 140k | SMP: 150k | SMA/K: 160k</p>
-            </div>
-            <div class="space-y-4">
-                <h3 class="archivo text-2xl text-white">Quranic</h3>
-                <p class="text-sm opacity-70">Anak: 80k | Dewasa: 180k</p>
-            </div>
-            <div class="space-y-4">
-                <h3 class="archivo text-2xl text-white">Computer</h3>
-                <p class="text-sm opacity-70">Anak: 150k | Dewasa: 220k</p>
-            </div>
-        </div>
-
-        <!-- Mentor Name & Motivasi -->
-        <div class="md:col-span-12 p-8 text-center border-t border-emerald-900 mt-4">
-            <p class="archivo text-2xl md:text-4xl italic text-emerald-900 stroke-emerald-500 mb-6">Ms. Fahira Meidina Abdi, S. Kom.</p>
-            <p class="text-emerald-500 font-bold tracking-widest uppercase">"Teruslah berproses, karena hasil tidak akan mengkhianati usaha yang diniatkan untuk kebaikan."</p>
-        </div>
-
+        <!-- Footer -->
+        <footer class="flex justify-between items-center pt-20 border-t border-emerald-900/10">
+            <p class="uppercase tracking-[0.5em] text-[9px]">Ms. Fahira Meidina Abdi, S. Kom.</p>
+            <p class="uppercase tracking-[0.5em] text-[9px] opacity-40">Jakarta, 2026</p>
+        </footer>
     </main>
-
-    <footer class="mt-10 border-t border-emerald-900 p-4 text-center text-[10px] uppercase tracking-[0.5em] opacity-40">
-        Status: Private Mentorship Only // 2026
-    </footer>
 
 </body>
 </html>
-
